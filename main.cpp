@@ -3,11 +3,11 @@
 
 int main()
 {
-    int width = 800;
-    int height = 450;
+    const int windowWidth = 512;
+    const int windowHeight = 380;
 
     SetConfigFlags(FLAG_MSAA_4X_HINT | FLAG_VSYNC_HINT);
-    InitWindow(width, height, "Dapper Dasher");
+    InitWindow(windowWidth, windowHeight, "Dapper Dasher");
     SetTargetFPS(60);
 
     float deltatime;
@@ -18,7 +18,7 @@ int main()
 
         BeginDrawing();
 
-        ClearBackground(LIGHTGRAY); // avoid flickering while double buffering
+        ClearBackground(WHITE); // avoid flickering while double buffering
 
         EndDrawing();
     }
