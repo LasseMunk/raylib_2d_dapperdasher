@@ -1,5 +1,6 @@
 #include <iostream>
 #include "raylib.h"
+#include "dapper-dasher-types.h"
 
 int main()
 {
@@ -11,6 +12,8 @@ int main()
     SetTargetFPS(60);
 
     float deltatime;
+
+    Rect rect = {0, 0, 32, 32, 0};
 
     while (!WindowShouldClose())
     {

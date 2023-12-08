@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
+set(CMAKE_CXX_STANDARD 20)
 project(dapper_dasher VERSION 0.0.1)
 
 #Dependencies
@@ -28,6 +29,7 @@ set(SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/source")
 target_sources(${PROJECT_NAME}
     PRIVATE
         main.cpp
+        ${INCLUDE_DIR}/dapper-dasher-types.h
        
 )
 
